@@ -1,5 +1,5 @@
-<div>
-    <img align="center" width="280" src="/mgt/thigsPics.jpeg" style="border-radius: 50%"/>
+<div align="center">
+    <img src="/mgt/thigsPics.jpeg" align="center" width="280" style="border-radius: 50%; object-fit"/>
 </div>
 
 #  Portfolio Digital Thiago Martins de Carvalho
