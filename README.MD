@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 Tonho
-=======
-### Pablo
->>>>>>> origin/main
 
 <div align="center">
     <img src="/mgt/thigsPics.jpeg" align="center" width="280" style="border-radius: 50%;"/>
@@ -17,8 +13,4 @@ Tonho
 - Html
 - Git
 - Github
-<<<<<<< HEAD
 - Markdown  
-=======
-- Markdown
->>>>>>> origin/main
