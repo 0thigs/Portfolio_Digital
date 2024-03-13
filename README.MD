@@ -6,7 +6,10 @@
 </head>
 <body>
     <div style="text-align:center;">
-        <img align="center" width="200px" src="/mgt/thigsPics.jpeg" alt="Picture"/> 
+        <div align="center">
+            <img width="200px" src="/mgt/thigsPics.jpeg" alt="Picture"/> 
+        </div>
+    
         <h1 align="center">Portfólio digital Thigszin</h1>
         <h2 align="center">Orientador: Fabrício Galende Marques de Carvalho</h2>
         <h3 align="center">Tecnologias utilizadas:</h3>
