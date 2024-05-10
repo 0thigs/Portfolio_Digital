@@ -1,0 +1,25 @@
+{
+  "name": "portfolio_digital",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "dev": "python3 main.py | npx tailwindcss -i ./src/static/input.css -o ./src/static/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0thigs/Portfolio_Digital.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0thigs/Portfolio_Digital/issues"
+  },
+  "homepage": "https://github.com/0thigs/Portfolio_Digital#readme"
+}
