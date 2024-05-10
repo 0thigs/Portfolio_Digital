@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{url_for('static',filename='output.css')}}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/css/index.min.css" rel="stylesheet">
+    <title>
+        {%block title%}
+            Portfólio - Thigs
+        {%endblock%}
+    </title>
+</head>
+<body class="flex">
+
+    {%include "./components/header.html"%}
+    
+    {%block body%}
+    {%endblock%}
+
+    <script src="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/js/index.min.js"></script>
+</body>
+</html>
