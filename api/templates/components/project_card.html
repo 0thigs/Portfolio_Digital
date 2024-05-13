@@ -1,0 +1,20 @@
+{% macro project_card(name, image, href) %}
+
+<div class="max-w-sm bg-[#202020]  border border-[#6B7280] rounded-lg shadow">
+    <a href="{{href}}" target="_blank">
+        <img class="rounded-t-lg" src="{{image}}" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="{{href}}" target="_blank">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">{{name}}</h5>
+        </a>
+        <a href="{{href}}" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#4a1d96] rounded-lg hover:bg-[#491d96a1] focus:ring-4 focus:outline-none focus:ring-[#613eac] border border-[#9061F9]">
+            Repositório
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+{%endmacro%}

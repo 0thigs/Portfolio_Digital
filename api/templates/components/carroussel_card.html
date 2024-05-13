@@ -1,0 +1,8 @@
+{% macro carroussel_card(name, image, href) %}
+<a href="{{href}}" target="_blank">
+    <div class="w-max h-[65px] flex text-white py-[10px] bg-[#6969693a] justify-center items-center px-[20px] border-[2px] border-[#414141] rounded-lg gap-[5px]">
+        <h1 class="text-2xl">{{ name }}</h1>
+        <img class="flex items-center justify-center h-full rounded-md" src="{{ image }}" alt="{{ name }} logo" />
+    </div>
+</a>
+{% endmacro %}

@@ -3,7 +3,7 @@
 {% set bg_light = "w-[950px] h-[950px] absolute z-[-1] rounded-full bg-gradient-to-l from-[#4C00CC] to-[#FF29C3]"%}
 {% set text_color = "bg-gradient-to-b bg-clip-text text-transparent from-[#9566FF] to-[#4A1D96]"%}
 
-{%block title%}Homepage - Thigs{%endblock%}
+{%block title%}Homepage - Thiago Martins{%endblock%}
 
 {%block body%}
 
@@ -13,7 +13,7 @@
 <div class="{{bg_light}} top-[50%] right-[-20%] rotate-180 blur-[5px]"></div>
 <div class="{{bg_light}} top-[50%] right-[-20%] rotate-180 z-[-2] blur-[200px]"></div>
 
-    <main class="h-[calc(100vh-140px)] flex flex-col justify-start relative text-white mt-10 gap-[100px]">
+    <main class="h-[calc(100vh-140px)] flex flex-col justify-start relative text-white mt-10 gap-[10vh]">
         <div class="flex flex-col items-center justify-start gap-4">
             <img src="{{url_for('static', filename='/images/thigsPics.jpeg')}}" class="rounded-3xl w-[300px] border-4 border-[#b5b5b5]">
             <h1 class="text-[50px] font-bold outline-none">Olá<span class="{{text_color}}">,</span> eu sou Thiago<span class="{{text_color}}">.</span></h1>
@@ -31,12 +31,13 @@
             </a>
         </div>
     </main>
-    <div class="h-[100vh] bg-black border-t border-[#333333] flex flex-col justify-start text-white pt-[50px]">
-        
+
+    <hr class="h-[1px] border-[#333333]">
+
+    <div class="h-[100vh] bg-black flex flex-col pt-[150px] justify-center text-white">    
         <div class="flex items-center justify-center">
             <h1 class="text-[50px] font-bold outline-none">Sobre Mim<span class="{{text_color}}">.</span></h1>
         </div>
-
         <div class="w-full mt-[30px] flex justify-center items-center px-[150px] flex-wrap">
             <div class="flex flex-col items-center justify-center gap-10 mr-[200px]">
                 <div class="w-[490px] bg-[#6c6c6c41] p-[25px] flex flex-col gap-2 rounded-lg border border-[#656565]">
@@ -69,9 +70,24 @@
                         Profissional
                     </button>
                 </div>
-                <div class="border-l-2 border-defaultPurple w-[490px] h-[600px] relative">
+                <div class="border-l-2 border-defaultPurple w-[490px] h-[500px] relative">
                     <div class="flex">
-                        <div class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%]"></div>
+                        <div class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%]">
+                                <h1 class="pl-16 w-[490px]">Ensino Médio - Deputado Benedito Matarazzo</h1>
+                                <p class="pl-16 w-[490px] text-[#5F5F5F]">2021 - 2023</p>
+                        </div>
+                        <div class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[30%]">
+                            <h1 class="pl-16 w-[490px]">Ensino Técnico Administração - Proz Educação </h1>
+                            <p class="pl-16 w-[490px] text-[#5F5F5F]">2022 - 2023</p>
+                        </div>
+                        <div class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[70%]">
+                            <h1 class="pl-16 w-[490px]">Ensino Técnico Desenvolvimento de sistemas - Etec Ilza Nascimento Pintus</h1>
+                            <p class="pl-16 w-[490px] text-[#5F5F5F]">2022 - 2023</p>
+                        </div>
+                        <div class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[100%]">
+                            <h1 class="pl-16 w-[490px]">Ensino Superior Desenvolvimento de Software Multiplataforma - FATEC Prof Jessen Vidal</h1>
+                            <p class="pl-16 w-[490px] text-[#5F5F5F]">2024 - 2026</p>
+                        </div>
                     </div>
                 </div>
             </div>
