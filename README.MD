@@ -11,7 +11,7 @@
 - Html
 - Git
 - Github
-- Markdown  
+- Markdown 
 
 # Execução do Portifólio
 

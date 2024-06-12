@@ -1,97 +1,173 @@
-{%extends "root.html"%}
-
-{% set bg_light = "w-[950px] h-[950px] absolute z-[-1] rounded-full bg-gradient-to-l from-[#4C00CC] to-[#FF29C3]"%}
-{% set text_color = "bg-gradient-to-b bg-clip-text text-transparent from-[#9566FF] to-[#4A1D96]"%}
-
-{%block title%}Homepage - Thiago Martins{%endblock%}
-
-{%block body%}
+{%extends "root.html"%} {% set bg_light = "w-[950px] h-[950px] absolute z-[-1]
+rounded-full bg-gradient-to-l from-[#4C00CC] to-[#FF29C3]"%} {% set text_color =
+"bg-gradient-to-b bg-clip-text text-transparent from-[#9566FF] to-[#4A1D96]"%}
+{%block title%}Homepage - Thiago Martins{%endblock%} {%block body%}
 
 <!-- BG LIGHTS -->
-<div class="{{bg_light}} top-[-50%] left-[-20%] blur-[5px]"></div>
+<div
+  class="{{bg_light}} top-[-50%] left-[-20%] blur-[5px]"
+></div>
 <div class="{{bg_light}} top-[-50%] left-[-20%] z-[-2] blur-[200px]"></div>
 <div class="{{bg_light}} top-[50%] right-[-20%] rotate-180 blur-[5px]"></div>
-<div class="{{bg_light}} top-[50%] right-[-20%] rotate-180 z-[-2] blur-[200px]"></div>
+<div
+  class="{{bg_light}} top-[50%] right-[-20%] rotate-180 z-[-2] blur-[200px]"
+></div>
 
-    <main class="h-[calc(100vh-140px)] flex flex-col justify-start relative text-white mt-10 gap-[10vh]">
-        <div class="flex flex-col items-center justify-start gap-4">
-            <img src="{{url_for('static', filename='/images/thigsPics.jpeg')}}" class="rounded-3xl w-[300px] border-4 border-[#b5b5b5]">
-            <h1 class="text-[50px] font-bold outline-none">Olá<span class="{{text_color}}">,</span> eu sou Thiago<span class="{{text_color}}">.</span></h1>
-            <p class="text-[40px] hover:scale-110 transition duration-300 cursor-pointer">😄</p>
-        </div>
-        <div class="flex items-center justify-center gap-[100px]">
-            <a href="https://www.linkedin.com/in/desenvolvedor-frontend/" target="_blank" class="hover:scale-110 transition duration-300 w-[65px] h-[65px] bg-[#a3a3a383] border-2 border-[#b5b5b5] rounded-lg flex justify-center items-center cursor-pointer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" class=" w-[80%] shadow-md rounded-md">
-            </a>
-            <a href="https://www.instagram.com/thigszin/" target="_blank" class="hover:scale-110 transition duration-300 w-[65px] h-[65px] bg-[#a3a3a383] border-2 border-[#b5b5b5] rounded-lg flex justify-center items-center cursor-pointer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png" class=" w-[80%] shadow-md rounded-md">
-            </a>
-            <a href="https://www.github.com/0thigs/" target="_blank" class="hover:scale-110 transition duration-300 w-[65px] h-[65px] bg-[#a3a3a383] border-2 border-[#b5b5b5] rounded-lg flex justify-center items-center cursor-pointer">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class=" w-[80%] rounded-md">
-            </a>
-        </div>
-    </main>
+<main
+  class="h-[calc(100vh-140px)] flex flex-col justify-start relative text-white mt-10 gap-[10vh]"
+>
+  <div class="flex flex-col items-center justify-start gap-4 animate-fade-in">
+    <img
+      src="{{url_for('static', filename='/images/thigsPics.jpeg')}}"
+      class="rounded-3xl w-[300px] border-4 border-[#b5b5b5]"
+    />
+    <h1 class="text-[50px] font-bold outline-none">
+      Olá<span class="{{text_color}}">,</span> eu sou Thiago<span
+        class="{{text_color}}"
+        >.</span
+      >
+    </h1>
+    <p
+      class="text-[40px] hover:scale-110 transition duration-300 cursor-pointer"
+    >
+      😄
+    </p>
+  </div>
+  <div class="flex items-center justify-center gap-[100px]">
+    <a
+      href="https://www.linkedin.com/in/desenvolvedor-frontend/"
+      target="_blank"
+      class="hover:scale-110 transition duration-300 w-[65px] h-[65px] bg-[#a3a3a383] border-2 border-[#b5b5b5] rounded-lg flex justify-center items-center cursor-pointer"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
+        class="w-[80%] shadow-md rounded-md"
+      />
+    </a>
+    <a
+      href="https://www.instagram.com/thigszin/"
+      target="_blank"
+      class="animate-in fade-in hover:scale-110 transition duration-300 w-[65px] h-[65px] bg-[#a3a3a383] border-2 border-[#b5b5b5] rounded-lg flex justify-center items-center cursor-pointer"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png"
+        class="w-[80%] shadow-md rounded-md"
+      />
+    </a>
+    <a
+      href="https://www.github.com/0thigs/"
+      target="_blank"
+      class="hover:scale-110 transition duration-300 w-[65px] h-[65px] bg-[#a3a3a383] border-2 border-[#b5b5b5] rounded-lg flex justify-center items-center cursor-pointer"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+        class="w-[80%] rounded-md"
+      />
+    </a>
+  </div>
+</main>
 
-    <hr class="h-[1px] border-[#333333]">
+<hr class="h-[1px] border-[#333333]" />
 
-    <div class="h-[100vh] bg-black flex flex-col pt-[150px] justify-center text-white">    
-        <div class="flex items-center justify-center">
-            <h1 class="text-[50px] font-bold outline-none">Sobre Mim<span class="{{text_color}}">.</span></h1>
-        </div>
-        <div class="w-full mt-[30px] flex justify-center items-center px-[150px] flex-wrap">
-            <div class="flex flex-col items-center justify-center gap-10 mr-[200px]">
-                <div class="w-[490px] bg-[#6c6c6c41] p-[25px] flex flex-col gap-2 rounded-lg border border-[#656565]">
-                    <h1 class="text-[25px] font-bold">
-                        Sobre Mim
-                    </h1>
-                    <p class="text-[#9CA3AF]">
-                        👋 Hello world, pode me chamar apenas de Thiago. Prazer! <br><br>
-                        👨‍💻 Sou um Desenvolvedor Web Sempre buscando mais conhecimento. <br><br> 
-                        🎓 Cursando Desenvolvimento de Software Multiplataforma pela FATEC de São José dos Campos. <br><br>
-                        💡 Interesses em desenvolvimento Front-end, Back-End e UX/UI Design. <br><br>
-                        🚀 Tentando ser um pouquinho melhor do que ontem todos dias.
-                    </p>
-                </div>
-                <div class="w-[490px] bg-[#6c6c6c41] p-[25px] flex flex-col gap-2 rounded-lg border border-[#656565]">
-                    <h1 class="text-[25px] font-bold">
-                        Escuto programando
-                    </h1>
-                    <p class="text-[#9CA3AF]">
-                        <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/9768370282" width="100%" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
-                    </p>
-                </div>
-            </div>
-            <div class="flex flex-col items-center justify-center gap-10">
-                <div class="flex">
-                    <button class="py-[10px] px-[15px] bg-[#6c6c6c7a] rounded-s-md border-[2px] border-r-0 border-[#6B7280]">
-                        Academico
-                    </button>
-                    <button class="py-[10px] px-[15px] bg-[#6c6c6c7a] rounded-e-md border-[2px] border-[#6B7280]">
-                        Profissional
-                    </button>
-                </div>
-                <div class="border-l-2 border-defaultPurple w-[490px] h-[500px] relative">
-                    <div class="flex">
-                        <div class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%]">
-                                <h1 class="pl-16 w-[490px]">Ensino Médio - Deputado Benedito Matarazzo</h1>
-                                <p class="pl-16 w-[490px] text-[#5F5F5F]">2021 - 2023</p>
-                        </div>
-                        <div class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[30%]">
-                            <h1 class="pl-16 w-[490px]">Ensino Técnico Administração - Proz Educação </h1>
-                            <p class="pl-16 w-[490px] text-[#5F5F5F]">2022 - 2023</p>
-                        </div>
-                        <div class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[70%]">
-                            <h1 class="pl-16 w-[490px]">Ensino Técnico Desenvolvimento de sistemas - Etec Ilza Nascimento Pintus</h1>
-                            <p class="pl-16 w-[490px] text-[#5F5F5F]">2022 - 2023</p>
-                        </div>
-                        <div class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[100%]">
-                            <h1 class="pl-16 w-[490px]">Ensino Superior Desenvolvimento de Software Multiplataforma - FATEC Prof Jessen Vidal</h1>
-                            <p class="pl-16 w-[490px] text-[#5F5F5F]">2024 - 2026</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-        </div>
+<div
+  class="h-[100vh] bg-black flex flex-col pt-[300px] justify-center text-white"
+>
+  <div 
+  class="flex items-center justify-center"
+  >
+    <h1 class="text-[50px] font-bold outline-none hide">
+      Sobre Mim<span class="{{text_color}}">.</span>
+    </h1>
+  </div>
+  <div
+    class="w-full mt-[30px] flex justify-center items-center px-[150px] flex-wrap"
+  >
+    <div class="flex flex-col items-center justify-center gap-10 mr-[200px]">
+      <div
+        class="w-[490px] bg-[#6c6c6c41] p-[25px] flex flex-col gap-2 rounded-lg border border-[#656565]"
+      >
+        <h1 class="text-[25px] font-bold">Sobre Mim</h1>
+        <p class="text-[#9CA3AF]">
+          👋 Hello world, pode me chamar apenas de Thiago. Prazer! <br /><br />
+          👨‍💻 Sou um Desenvolvedor Web Sempre buscando mais conhecimento.
+          <br /><br />
+          🎓 Cursando Desenvolvimento de Software Multiplataforma pela FATEC de
+          São José dos Campos. <br /><br />
+          💡 Interesses em desenvolvimento Front-end, Back-End e UX/UI Design.
+          <br /><br />
+          🚀 Tentando ser um pouquinho melhor do que ontem todos dias.
+        </p>
+      </div>
+      <div
+        class="w-[490px] bg-[#6c6c6c41] p-[25px] flex flex-col gap-2 rounded-lg border border-[#656565]"
+      >
+        <h1 class="text-[25px] font-bold">Escuto programando</h1>
+        <p class="text-[#9CA3AF]">
+          <iframe
+            title="deezer-widget"
+            src="https://widget.deezer.com/widget/dark/playlist/9768370282"
+            width="100%"
+            height="200"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media; clipboard-write"
+          ></iframe>
+        </p>
+      </div>
     </div>
-{%endblock%}
+    <div class="flex flex-col items-center justify-center gap-10">
+      <div class="flex">
+        <button
+          class="py-[10px] px-[15px] bg-[#6c6c6c7a] rounded-s-md border-[2px] border-r-0 border-[#6B7280]"
+        >
+          Academico
+        </button>
+        <button
+          class="py-[10px] px-[15px] bg-[#6c6c6c7a] rounded-e-md border-[2px] border-[#6B7280]"
+        >
+          Profissional
+        </button>
+      </div>
+      <div class="border-l-2 border-defaultPurple w-[490px] h-[500px] relative">
+        <div class="flex">
+          <div
+            class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%]"
+          >
+            <h1 class="pl-16 w-[490px]">
+              Ensino Médio - Deputado Benedito Matarazzo
+            </h1>
+            <p class="pl-16 w-[490px] text-[#5F5F5F]">2021 - 2023</p>
+          </div>
+          <div
+            class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[30%]"
+          >
+            <h1 class="pl-16 w-[490px]">
+              Ensino Técnico Administração - Proz Educação
+            </h1>
+            <p class="pl-16 w-[490px] text-[#5F5F5F]">2022 - 2023</p>
+          </div>
+          <div
+            class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[70%]"
+          >
+            <h1 class="pl-16 w-[490px]">
+              Ensino Técnico Desenvolvimento de sistemas - Etec Ilza Nascimento
+              Pintus
+            </h1>
+            <p class="pl-16 w-[490px] text-[#5F5F5F]">2022 - 2023</p>
+          </div>
+          <div
+            class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[100%]"
+          >
+            <h1 class="pl-16 w-[490px]">
+              Ensino Superior Desenvolvimento de Software Multiplataforma -
+              FATEC Prof Jessen Vidal
+            </h1>
+            <p class="pl-16 w-[490px] text-[#5F5F5F]">2024 - 2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+  {%endblock%}
+</div>
