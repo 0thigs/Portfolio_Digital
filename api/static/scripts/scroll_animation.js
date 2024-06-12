@@ -1,16 +1,19 @@
 const observer = new IntersectionObserver((entry) => {
     entry.forEach(entry => {
         if(entry.isIntersecting) {
-            entry.target.classList.add("show")
-            entry.target.classList.remove("hide")
+            entry.target.classList.add("animate-fade-in")
+            entry.target.classList.remove("animate-fade-out")
         }
         else {
-            entry.targe.classList.remove("show")
-            entry.targe.classList.add("hide")
+            entry.target.classList.remove("animate-fade-in")
+            entry.target.classList.add("animate-fade-out")
         }
     });
 })
 
-const hiddenElements = document.querySelectorAll(".selector")
+const hiddenElements = document.querySelectorAll(".scroll-animate-fade")
+hiddenElements.forEach(element => {
+    observer.observe(element)
+})
 
 console.log(hiddenElements)

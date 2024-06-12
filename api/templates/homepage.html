@@ -5,12 +5,12 @@ rounded-full bg-gradient-to-l from-[#4C00CC] to-[#FF29C3]"%} {% set text_color =
 
 <!-- BG LIGHTS -->
 <div
-  class="{{bg_light}} top-[-50%] left-[-20%] blur-[5px]"
+  class="{{bg_light}} top-[-50%] left-[-20%] blur-[5px] animate-fade-in animate-delay-300"
 ></div>
-<div class="{{bg_light}} top-[-50%] left-[-20%] z-[-2] blur-[200px]"></div>
-<div class="{{bg_light}} top-[50%] right-[-20%] rotate-180 blur-[5px]"></div>
+<div class="{{bg_light}} top-[-50%] left-[-20%] z-[-2] blur-[200px] animate-fade-in animate-delay-1000"></div>
+<div class="{{bg_light}} top-[50%] right-[-20%] rotate-180 blur-[5px] animate-fade-in animate-delay-300"></div>
 <div
-  class="{{bg_light}} top-[50%] right-[-20%] rotate-180 z-[-2] blur-[200px]"
+  class="{{bg_light}} top-[50%] right-[-20%] rotate-180 z-[-2] blur-[200px] animate-fade-in animate-delay-1000"
 ></div>
 
 <main
@@ -19,10 +19,10 @@ rounded-full bg-gradient-to-l from-[#4C00CC] to-[#FF29C3]"%} {% set text_color =
   <div class="flex flex-col items-center justify-start gap-4 animate-fade-in">
     <img
       src="{{url_for('static', filename='/images/thigsPics.jpeg')}}"
-      class="rounded-3xl w-[300px] border-4 border-[#b5b5b5]"
+      class="rounded-3xl w-[300px] border-4 border-[#b5b5b5] animate-fade-in"
     />
     <h1 class="text-[50px] font-bold outline-none">
-      Olá<span class="{{text_color}}">,</span> eu sou Thiago<span
+      Olá<span class="{{text_color}} selector">,</span> eu sou Thiago<span
         class="{{text_color}}"
         >.</span
       >
@@ -75,7 +75,7 @@ rounded-full bg-gradient-to-l from-[#4C00CC] to-[#FF29C3]"%} {% set text_color =
   <div 
   class="flex items-center justify-center"
   >
-    <h1 class="text-[50px] font-bold outline-none hide">
+    <h1 class="text-[50px] font-bold outline-none scroll-animate-fade">
       Sobre Mim<span class="{{text_color}}">.</span>
     </h1>
   </div>
@@ -84,7 +84,7 @@ rounded-full bg-gradient-to-l from-[#4C00CC] to-[#FF29C3]"%} {% set text_color =
   >
     <div class="flex flex-col items-center justify-center gap-10 mr-[200px]">
       <div
-        class="w-[490px] bg-[#6c6c6c41] p-[25px] flex flex-col gap-2 rounded-lg border border-[#656565]"
+        class="scroll-animate-fade w-[490px] bg-[#6c6c6c41] p-[25px] flex flex-col gap-2 rounded-lg border border-[#656565]"
       >
         <h1 class="text-[25px] font-bold">Sobre Mim</h1>
         <p class="text-[#9CA3AF]">
@@ -133,36 +133,36 @@ rounded-full bg-gradient-to-l from-[#4C00CC] to-[#FF29C3]"%} {% set text_color =
           <div
             class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%]"
           >
-            <h1 class="pl-16 w-[490px]">
+            <h1 class="pl-16 w-[490px] scroll-animate-fade">
               Ensino Médio - Deputado Benedito Matarazzo
             </h1>
-            <p class="pl-16 w-[490px] text-[#5F5F5F]">2021 - 2023</p>
+            <p class="pl-16 w-[490px] text-[#5F5F5F] scroll-animate-fade">2021 - 2023</p>
           </div>
           <div
             class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[30%]"
           >
-            <h1 class="pl-16 w-[490px]">
+            <h1 class="pl-16 w-[490px] scroll-animate-fade">
               Ensino Técnico Administração - Proz Educação
             </h1>
-            <p class="pl-16 w-[490px] text-[#5F5F5F]">2022 - 2023</p>
+            <p class="pl-16 w-[490px] text-[#5F5F5F] scroll-animate-fade">2022 - 2023</p>
           </div>
           <div
             class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[70%]"
           >
-            <h1 class="pl-16 w-[490px]">
+            <h1 class="pl-16 w-[490px] scroll-animate-fade">
               Ensino Técnico Desenvolvimento de sistemas - Etec Ilza Nascimento
               Pintus
             </h1>
-            <p class="pl-16 w-[490px] text-[#5F5F5F]">2022 - 2023</p>
+            <p class="pl-16 w-[490px] text-[#5F5F5F] scroll-animate-fade">2022 - 2023</p>
           </div>
           <div
             class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[100%]"
           >
-            <h1 class="pl-16 w-[490px]">
+            <h1 class="pl-16 w-[490px] scroll-animate-fade">
               Ensino Superior Desenvolvimento de Software Multiplataforma -
               FATEC Prof Jessen Vidal
             </h1>
-            <p class="pl-16 w-[490px] text-[#5F5F5F]">2024 - 2026</p>
+            <p class="pl-16 w-[490px] text-[#5F5F5F] scroll-animate-fade">2024 - 2026</p>
           </div>
         </div>
       </div>
