@@ -1,19 +1,20 @@
-<header class="flex justify-around items-center w-full py-[50px] font-bold text-white text-2xl   delay-[300ms] duration-[600ms] taos:[transform:translate3d(200px,-200px,0)] taos:opacity-0"  data-taos-offset="500">
-    <div>
-      <h1>Thiago Martins</h1>
-    </div>
+<header class="flex flex-wrap md:flex-nowrap justify-around items-center w-full py-[50px] font-bold text-white text-2xl   delay-[300ms] duration-[600ms] taos:[transform:translate3d(200px,-200px,0)] taos:opacity-0"  data-taos-offset="500">
+         <div class="hidden md:block">
+            <h1>Thiago Martins</h1>
+         </div>
 
-    <div class="flex gap-[32px]">
-      <a href="{{ url_for('homepage') }}">
-         Sobre Mim
-      </a>
-      <a href="{{url_for('projects')}}">
-         Projetos
-      </a>
-      <a href="{{url_for('contact')}}">
-         Contato
-      </a>
-    </div>
+         <div class="flex gap-[32px]">
+         <a href="{{ url_for('homepage') }}">
+            Sobre Mim
+         </a>
+         <a href="{{url_for('projects')}}">
+            Projetos
+         </a>
+         <a href="{{url_for('contact')}}">
+            Contato
+         </a>
+         </div>
 
-    {% include './components/download_button.html'%}
+       {% include './components/download_button.html'%}
+    </div>
 </header>
