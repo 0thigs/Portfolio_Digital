@@ -8,4 +8,64 @@
     html {
         font-family: "Montserrat", sans-serif;
     }
+
+    .footer {
+        --tw-border-opacity: 1;
+        --tw-text-opacity: 1;
+        border-color: rgb(51 51 51 / var(--tw-border-opacity));
+        color: rgb(170 170 170 / var(--tw-text-opacity));
+        width: 100%;
+        height: 50px;
+        border-top-width: 1px;
+        margin-top: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+
+    .header {
+        --tw-text-opacity: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .headerTitle {
+        display: none;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    @media (min-width: 768px) {
+        .header {
+            flex-wrap: nowrap;
+        }
+
+        .headerTitle {
+            width: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
