@@ -29,5 +29,6 @@ module.exports = {
 			},
 		plugins: [
 			require('@midudev/tailwind-animations'),
+			require('tailwindcss-animated')
 		],
 };

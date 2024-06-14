@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "devDependencies": {
+    "@midudev/tailwind-animations": "^0.0.7",
     "autoprefixer": "^10.4.19",
     "concurrently": "^8.2.2",
     "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4",
-    "@midudev/tailwind-animations": "^0.0.7"
-    },
-    "scripts": {
-      "app": "python3 ./api/main.py",
-      "style": "npx tailwindcss -i ./api/static/input.css -o ./api/static/output.css --watch",
+    "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "app": "python3 ./api/main.py",
+    "style": "npx tailwindcss -i ./api/static/input.css -o ./api/static/output.css --watch",
     "start": "concurrently 'npm run app' 'npm run style'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,8 +23,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/0thigs/Portfolio_Digital/issues"
-    },
-    "homepage": "https://github.com/0thigs/Portfolio_Digital#readme",
-    "dependencies": {
+  },
+  "homepage": "https://github.com/0thigs/Portfolio_Digital#readme",
+  "dependencies": {
+    "tailwindcss-animated": "^1.1.0"
   }
 }
