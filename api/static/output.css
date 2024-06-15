@@ -705,6 +705,10 @@ html {
   margin-inline-start: 0.5rem;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -713,16 +717,8 @@ html {
   margin-top: 5rem;
 }
 
-.mt-5{
-  margin-top: 1.25rem;
-}
-
 .mt-\[30px\]{
   margin-top: 30px;
-}
-
-.mt-0{
-  margin-top: 0px;
 }
 
 .block{
@@ -791,10 +787,6 @@ html {
 
 .w-\[100\%\]{
   width: 100%;
-}
-
-.w-\[130px\]{
-  width: 130px;
 }
 
 .w-\[300px\]{
@@ -1108,6 +1100,10 @@ html {
 .bg-gray-50{
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#aaaaaa7a\]{
+  background-color: #aaaaaa7a;
 }
 
 .bg-gradient-to-b{
@@ -1430,10 +1426,6 @@ html {
 }
 
 @media (min-width: 768px){
-  .md\:mt-0{
-    margin-top: 0px;
-  }
-
   .md\:block{
     display: block;
   }
