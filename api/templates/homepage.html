@@ -108,60 +108,20 @@ rounded-full bg-gradient-to-l from-[#4C00CC] to-[#FF29C3]"%} {% set text_color =
         class="flex flex-col items-center justify-center gap-10 pt-10 lg:pt-0">
         <div class="flex">
           <button
-            class="py-[10px] px-[15px] bg-[#6c6c6c7a] rounded-s-md border-[2px] border-r-0 border-[#6B7280]">
+            data-button
+            value="academic"
+            class="py-[10px] px-[15px] bg-[#aaaaaa7a] rounded-s-md border-[2px] border-r-0 border-[#6B7280]">
             Academico
           </button>
           <button
-            class="py-[10px] px-[15px] bg-[#6c6c6c7a] rounded-e-md border-[2px] border-[#6B7280]">
+            data-button
+            value="professional"
+            class="py-[10px] px-[15px] rounded-e-md border-[2px] border-[#6B7280]">
             Profissional
           </button>
         </div>
-        <div
-          class="border-l-2 border-defaultPurple w-[350px] md:w-[490px] h-[500px] relative">
-          <div class="flex">
-            <div
-              class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%]">
-              <h1 class="pl-16 w-[350px] md:w-[490px] scroll-animate-fade">
-                Ensino Médio - Deputado Benedito Matarazzo
-              </h1>
-              <p
-                class="pl-16 w-[350px] md:w-[490px] text-[#5F5F5F] scroll-animate-fade">2021
-                - 2023</p>
-            </div>
-            <div
-              class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[30%]">
-              <h1 class="pl-16 w-[350px] md:w-[490px] scroll-animate-fade">
-                Ensino Técnico Administração - Proz Educação
-              </h1>
-              <p
-                class="pl-16 w-[350px] md:w-[490px] text-[#5F5F5F] scroll-animate-fade">2022
-                - 2023</p>
-            </div>
-            <div
-              class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[70%]">
-              <h1 class="pl-16 w-[350px] md:w-[490px] scroll-animate-fade">
-                Ensino Técnico Desenvolvimento de sistemas - Etec Ilza
-                Nascimento
-                Pintus
-              </h1>
-              <p
-                class="pl-16 w-[350px] md:w-[490px] text-[#5F5F5F] scroll-animate-fade">2022
-                - 2023</p>
-            </div>
-            <div
-              class="absolute w-4 h-4 rounded-full bg-defaultPurple left-[-1.5%] top-[100%]">
-              <h1 class="pl-16 w-[350px] md:w-[490px] scroll-animate-fade">
-                Ensino Superior Desenvolvimento de Software Multiplataforma -
-                FATEC Prof Jessen Vidal
-              </h1>
-              <p
-                class="pl-16 w-[350px] md:w-[490px] text-[#5F5F5F] scroll-animate-fade">2024
-                - 2026</p>
-            </div>
-          </div>
-        </div>
+        {% include 'components/time_list.html'%}
       </div>
-      <div></div>
     </div>
   </div>
   {%endblock%}
