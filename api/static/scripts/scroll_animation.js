@@ -15,5 +15,3 @@ const hiddenElements = document.querySelectorAll(".scroll-animate-fade")
 hiddenElements.forEach(element => {
     observer.observe(element)
 })
-
-console.log(hiddenElements)
