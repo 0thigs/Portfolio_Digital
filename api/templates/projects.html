@@ -105,12 +105,23 @@
 <div class="flex flex-col items-center justify-center w-full gap-[50px] mt-20">
     <div class="flex items-center justify-center">
         <h1 class=" text-white text-[40px] font-bold">
-            Projetos<span class="{{text_color}}">.</span>
+            Projetos Academicos<span class="{{text_color}}">.</span>
         </h1>
     </div>
     <div class="flex w-full justify-center flex-wrap items-center gap-[100px] p-10">
         <h1 style="color: white;">
-            {% for project in allProjects %}
+            {% for project in academicProjects %}
+                {{project_card.project_card(project.title, project.image, project.link)}}</h1>
+            {% endfor %}
+    </div>
+    <div class="flex items-center justify-center">
+        <h1 class=" text-white text-[40px] font-bold">
+            Projetos Pessoais<span class="{{text_color}}">.</span>
+        </h1>
+    </div>
+    <div class="flex w-full justify-center flex-wrap items-center gap-[100px] p-10">
+        <h1 style="color: white;">
+            {% for project in personalProjects %}
                 {{project_card.project_card(project.title, project.image, project.link)}}</h1>
             {% endfor %}
     </div>

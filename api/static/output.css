@@ -839,6 +839,34 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.animate-fade-in{
+  animation: fade-in 0.6s ease-in both;
+}
+
+@keyframes fade-out{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+.animate-fade-out{
+  animation: fade-out 0.6s ease-out both;
+}
+
 @keyframes infinite-scroll{
   from{
     transform: translateX(0);
@@ -1069,12 +1097,12 @@ html {
   background-color: #6c6c6c41;
 }
 
-.bg-\[\#6c6c6c7a\]{
-  background-color: #6c6c6c7a;
-}
-
 .bg-\[\#a3a3a383\]{
   background-color: #a3a3a383;
+}
+
+.bg-\[\#aaaaaa7a\]{
+  background-color: #aaaaaa7a;
 }
 
 .bg-black{
@@ -1100,10 +1128,6 @@ html {
 .bg-gray-50{
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#aaaaaa7a\]{
-  background-color: #aaaaaa7a;
 }
 
 .bg-gradient-to-b{
@@ -1352,6 +1376,22 @@ html {
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.animate-delay-1000{
+  animation-delay: 1000ms;
+}
+
+.animate-delay-300{
+  animation-delay: 300ms;
+}
+
+.animate-fade-in{
+  animation-composition: var(--tw-animate-composition);
+}
+
+.animate-fade-out{
+  animation-composition: var(--tw-animate-composition);
 }
 
 .animate-infinite-scroll{
