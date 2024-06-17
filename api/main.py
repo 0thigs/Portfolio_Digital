@@ -12,16 +12,29 @@ def homepage():
 
 @app.route("/projects")
 def projects():
-    allProjects = [
+    academicProjects = [
+    {
+        "title": "StarDust",
+        "image": url_for('static', filename='/images/card(5).png'),
+        "link": "https://github.com/0thigs/StarDust",
+    },
+    {
+        "title": "Smart Farm",
+        "image": url_for('static', filename='/images/card(8).png'),
+        "link": "https://github.com/ctrI-Alt-Del/smart-farming/",
+    },
     {
         "title": "Youtube Music Clone",
         "image": url_for('static', filename='/images/card(4).png'),
         "link": "https://github.com/0thigs/Youtube_music"
     },
+]
+    
+    personalProjects = [
     {
-        "title": "StarDust",
-        "image": url_for('static', filename='/images/card(5).png'),
-        "link": "https://github.com/0thigs/StarDust",
+        "title": "Opportunity",
+        "image": url_for('static', filename='/images/card(7).png'),
+        "link": "https://github.com/0thigs/Opportunity",
     },
     {
         "title": "Pokedéx",
@@ -42,9 +55,16 @@ def projects():
         "title": "Github Finder",
         "image": url_for('static', filename='/images/card(3).png'),
         "link": "https://github.com/0thigs/Github-Profile-Finder",
-    }
-    ]
-    return render_template("projects.html", allProjects=allProjects)
+    },
+      {
+        "title": "Rock Papper Scissor",
+        "image": url_for('static', filename='/images/card(9).png'),
+        "link": "https://github.com/0thigs/Rock-Papper-Scissor",
+    },
+
+]
+    
+    return render_template("projects.html", academicProjects=academicProjects ,personalProjects=personalProjects)
 
 @app.route("/contact")
 def contact():
