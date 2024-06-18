@@ -111,7 +111,7 @@
     <div class="flex w-full justify-center flex-wrap items-center gap-[100px] p-10">
         <h1 style="color: white;">
             {% for project in academicProjects %}
-                {{project_card.project_card(project.title, project.image, project.link)}}</h1>
+                {{project_card.project_card(project.title, project.image, project.link, project.description)}}</h1>
             {% endfor %}
     </div>
     <div class="flex items-center justify-center">
@@ -122,7 +122,7 @@
     <div class="flex w-full justify-center flex-wrap items-center gap-[100px] p-10">
         <h1 style="color: white;">
             {% for project in personalProjects %}
-                {{project_card.project_card(project.title, project.image, project.link)}}</h1>
+                {{project_card.project_card(project.title, project.image, project.link, project.description)}}</h1>
             {% endfor %}
     </div>
 </div>
